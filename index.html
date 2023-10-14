@@ -5,19 +5,20 @@
     <link rel="icon" type="image/svg+xml" href="./grid_110962.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GRID All</title>
+
+    <link rel="stylesheet" href="./assets/css/main.css">
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
-    <link rel="stylesheet" href="./assets/css/main.css">
-
+  
   </head>
   
- <body class="bg-[#f6f1f1]">
+ <body class="bg-amber-200">
       <!------First page header---->
     
       <section>
-        <div class="flex items-center justify-between space-x-4 m-4 bg-gradient-to-r from-cyan-500 to-blue-500 p-2">
+        <div class="flex items-center justify-between space-x-4 m-4 bg-gradient-to-r from-cyan-500 to-blue-500 p-2" id="top">
           <div class="flex items-center space-x-4 text-black font-semibold text-xl">
             <a href="./index.html" class="hover:cursor-pointer hover:text-white">Home</a>
             <a href="" class="hover:cursor-pointer hover:text-white">About</a>
@@ -139,7 +140,7 @@
         <div class="pb-8 pt-8">
             <div class="flex flex-row items-center space-x-4 ml-6 text-center">
                 <p class="text-3xl font-semibold">How to define me?</p>
-                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" class="fill-white hover:curosr-pointer hover:fill-cyan-800 animate-bounce motion-reduce:animate-bounce">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" class="fill-white hover:curosr-pointer hover:fill-cyan-800 animate-bounce">
                     <path
                         d="M9.525 18.025q-.5.325-1.012.038T8 17.175V6.825q0-.6.513-.888t1.012.038l8.15 5.175q.45.3.45.85t-.45.85l-8.15 5.175Z" />
                 </svg>
@@ -147,7 +148,7 @@
             </div>
         </div>
   
-        <div class="m-4 border-2 max-w-sm bg-white p-2 text-lg"> 
+        <div class="m-4 border-2 max-w-sm bg-cyan-800 text-white p-2 text-lg"> 
            <div>Grid-template-col</div>
            <div>Grid-template-row</div> 
            <div>Grid-col</div>
@@ -157,7 +158,37 @@
 </section>
 <!---Properties---->
 <!---Terminology----->
+<section>
+  <div>
+    <div class="text-4xl font-bold text-center">
+      <h4>Key features of Grid</h4>
+    </div>
+    
+  </div>
+</section>
 <!---Animation---->
+<section class="bg-cyan-500">
+  <div class="p-4 text-center text-4xl font-bold text-black bg-amber-200">
+    <h4>Animate me</h4>
+  </div>
+<div class="grid-flow-col grid gap-4 p-4 m-8">
+  <div class="border-2 text-center font-semibold p-2 hover:cursor-pointer hover:bg-cyan-800 hover:text-white shadow-xl">
+    <p>Grid-Gap</p>
+  </div>
+  <div class="border-2 text-center font-semibold p-2 hover:cursor-pointer hover:bg-cyan-800 hover:text-white shadow-xl">
+    <p>Grid-row-gap</p>
+  </div>
+  <div class="border-2 text-center font-semibold p-2 hover:cursor-pointer hover:bg-cyan-800 hover:text-white shadow-xl">
+    <p>Grid-col-Gap</p>
+  </div>
+  <div class="border-2 text-center font-semibold p-2 hover:cursor-pointer hover:bg-cyan-800 hover:text-white shadow-xl">
+    <p>Grid-template-col</p>
+  </div>
+  <div class="border-2 text-center font-semibold p-2 hover:cursor-pointer hover:bg-cyan-800 hover:text-white shadow-xl">
+    <p>Grid-template-row</p>
+  </div>
+</div>
+</section>
 <!---reference---->
     <!---Heading---->
 
@@ -166,15 +197,31 @@
     </div>
   
     <!---content---->
-    <div>
+    <div class="mx-10 my-8">
       <div class="m-4 text-lg font-medium">
         <h4>Follow: <a href="https://www.youtube.com/@CyberDudeNetworks" target="_blank" class="text-cyan-500 hover:text-cyan-800 hover:cursor-pointer">CyberDude Networks</a></h4>
       </div>
-      <div>
-        <img src="" alt="BEM CSS" class="w-12 h-12">
-        <img src="" alt="BEM CSS" class="w-12 h-12">
-        <img src="" alt="BEM CSS" >
+      <div class="flex items-center justify-center space-x-2 p-2 border-cyan-500 shadow-xl">
+        <div>
+          <h4 class="text-xl font-medium">Videos</h4>
+        </div>
+        <img src="./public/Image/Bem CSS.png" alt="BEM CSS" class="w-56 h-56 object-contain">
+        <img src="./public/Image/CSS Flexbox.png" alt="CSS Flexbox" class="w-56 h-56 object-contain">
+        <img src="./public/Image/CSS.png" alt="CSS"  class="w-56 h-56 object-contain">
       </div>
     </div>
+
+<!---footer----->
+<section>
+  <div>
+     <div class="font-medium text-sm m-6 text-center text-black">
+      <p>Copr. 2023 H.Jeya Rosini</p>
+      <a href="#top" class="text-cyan-500 p-1">Go Home</a>
+     </div>
+     <div class="m-2 p-2">
+      <p><span class="font-semibold text-sm">Note: </span>This project is done as a Junior Intern offered as 6-Month Internship Program by <a href="https://www.cyberdudenetworks.com/" target="_blank" class="text-cyan-500 hover:text-white">CyberDude Networks Pvt.Ltd</a> under the guidance of <span class="text-cyan-500">Mr. Anbuselvan</span></p>
+     </div>
+  </div>
+</section>
   </body>
 </html>
