@@ -5,7 +5,17 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'blue': '#121212',
+        's-blue': '#30475E',
+        'l-blue': '#F05454',
+        'll-blue': '#F5F5F5',
+      },
+      fontFamily: {
+        'pixelify-sans': ['Pixelify Sans','sans-serif'],
+      },
+    },
   },
   plugins: [],
 }
