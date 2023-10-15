@@ -1,227 +1,327 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./grid_110962.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GRID All</title>
 
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-  
-  </head>
-  
- <body class="bg-amber-200">
-      <!------First page header---->
-    
-      <section>
-        <div class="flex items-center justify-between space-x-4 m-4 bg-gradient-to-r from-cyan-500 to-blue-500 p-2" id="top">
-          <div class="flex items-center space-x-4 text-black font-semibold text-xl">
-            <a href="./index.html" class="hover:cursor-pointer hover:text-white">Home</a>
-            <a href="" class="hover:cursor-pointer hover:text-white">About</a>
-            <a href="#Q&A" class="hover:cursor-pointer hover:text-white">Q & A</a>
-          </div>
-          <div>
-            <img src="./Image/cyberdude-email.png" alt="cyberdude networks" class="w-32 h-32 rounded">
-          </div>
-          <div class="flex items-center justify-center space-x-4">
-           <input type="text" placeholder="Search" class="p-2 outline-none text-black rounded">
-          <a href="https://github.com/Jeya-rosini/Tailwindcss-Grid">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 20 20" class="fill-black hover:cursor-pointer hover:fill-white">
-              <path
-                d="M13.18 11.309c-.718 0-1.3.807-1.3 1.799c0 .994.582 1.801 1.3 1.801s1.3-.807 1.3-1.801c-.001-.992-.582-1.799-1.3-1.799zm4.526-4.683c.149-.365.155-2.439-.635-4.426c0 0-1.811.199-4.551 2.08c-.575-.16-1.548-.238-2.519-.238c-.973 0-1.945.078-2.52.238C4.74 2.399 2.929 2.2 2.929 2.2c-.789 1.987-.781 4.061-.634 4.426C1.367 7.634.8 8.845.8 10.497c0 7.186 5.963 7.301 7.467 7.301l1.734.002l1.732-.002c1.506 0 7.467-.115 7.467-7.301c0-1.652-.566-2.863-1.494-3.871zm-7.678 10.289h-.056c-3.771 0-6.709-.449-6.709-4.115c0-.879.31-1.693 1.047-2.369C5.537 9.304 7.615 9.9 9.972 9.9h.056c2.357 0 4.436-.596 5.664.531c.735.676 1.045 1.49 1.045 2.369c0 3.666-2.937 4.115-6.709 4.115zm-3.207-5.606c-.718 0-1.3.807-1.3 1.799c0 .994.582 1.801 1.3 1.801c.719 0 1.301-.807 1.301-1.801c0-.992-.582-1.799-1.301-1.799z" />
-            </svg>
-          </a>
-           <a href="https://www.linkedin.com/in/jeya-rosini-a4255421a/">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 20 20" class="fill-black hover:cursor-pointer hover:fill-white">
-              <path 
-                d="M10 .4C4.698.4.4 4.698.4 10s4.298 9.6 9.6 9.6s9.6-4.298 9.6-9.6S15.302.4 10 .4zM7.65 13.979H5.706V7.723H7.65v6.256zm-.984-7.024c-.614 0-1.011-.435-1.011-.973c0-.549.409-.971 1.036-.971s1.011.422 1.023.971c0 .538-.396.973-1.048.973zm8.084 7.024h-1.944v-3.467c0-.807-.282-1.355-.985-1.355c-.537 0-.856.371-.997.728c-.052.127-.065.307-.065.486v3.607H8.814v-4.26c0-.781-.025-1.434-.051-1.996h1.689l.089.869h.039c.256-.408.883-1.01 1.932-1.01c1.279 0 2.238.857 2.238 2.699v3.699z" />
-            </svg>
-           </a>
-          </div>
-        </div>
-      </section>
-    
- <!----First page context-->
-      <section class=" grid grid-flow-col mt-8 gap-x-72">
-        <div class="border-2 p-4 mx-16 shadow-xl">
-          <div>
-            <h1 class="text-xl font-bold pb-4 text-center text-cyan-700">Context</h1>
-          </div>
-          <ul class="text-zinc-800 text-xl">
-            <a href="#intro" class="hover:cursor-pointer hover:text-cyan-700">
-              <li>
-              Introduction
-            </li>
-          </a>  
-          <a href="#basics" class="hover:cursor-pointer hover:text-cyan-700"><li>
-            Basics
-          </li>
-        </a> 
-        <a href="#properties" class="hover:cursor-pointer hover:text-cyan-700"><li>
-          Properties
-        </li>
-      </a> 
-      <a href="#terminology" class="hover:cursor-pointer hover:text-cyan-700"><li>
-        Terminology
-      </li>
-      </a> 
-      <a href="#animation" class="hover:cursor-pointer hover:text-cyan-700"><li>
-        Aniamtion
-      </li>
-      </a> 
-      <a href="#reference" class="hover:cursor-pointer hover:text-cyan-700"><li>
-        Other Reference
-      </li>
-      </a> 
-          </ul>
-        </div>
-        
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="./grid_110962.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GRID All</title>
 
-<!---Firsr page Logo-->
-      
-            <div class="m-8 space-x-2"> 
-              <span class="  font-extrabold text-8xl border-2 border-cyan-400 p-3 bg-cyan-200 ">G</span>
-              <span  class=" font-extrabold text-8xl border-2 border-cyan-400 bg-cyan-200 p-3 ">R</span>
-              <span  class=" font-extrabold text-8xl border-2 border-cyan-400 bg-cyan-200 p-3 ">I</span>
-              <span  class=" font-extrabold text-8xl border-2 border-cyan-400 bg-cyan-200 p-3 ">D</span>
-              <span class="text-6xl font-medium text-black">All</span>
-            </div>
-      </section>
- <!----First page Socail media-->
-      <section>
-        <div class="bg-cyan-200 max-w-md flex items-center p-2 m-4 space-x-6 rounded">
-          <h6 class="font-medium ">Follow Us:</h6>
-          <a href="https://www.facebook.com/CdudeNetworks/" target="blank">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"  class="fill-cyan-800 hover:cursor-pointer hover:fill-black">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+
+<body class="bg-amber-200">
+  <!------First page header---->
+
+  <section>
+    <div class="flex items-center justify-between space-x-4 m-4 bg-gradient-to-r from-cyan-500 to-blue-500 p-2"
+      id="top">
+      <div class="flex items-center space-x-4 text-black font-semibold text-xl">
+        <a href="./index.html" class="hover:cursor-pointer hover:text-white">Home</a>
+        <a href="" class="hover:cursor-pointer hover:text-white">About</a>
+        <a href="#Q&A" class="hover:cursor-pointer hover:text-white">Q & A</a>
+      </div>
+      <div>
+        <img src="./Image/cyberdude-email.png" alt="cyberdude networks" class="w-32 h-32 rounded">
+      </div>
+      <div class="flex items-center justify-center space-x-4">
+        <input type="text" placeholder="Search" class="p-2 outline-none text-black rounded">
+        <a href="https://github.com/Jeya-rosini/Tailwindcss-Grid">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 20 20"
+            class="fill-black hover:cursor-pointer hover:fill-white">
             <path
-              d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z" />
+              d="M13.18 11.309c-.718 0-1.3.807-1.3 1.799c0 .994.582 1.801 1.3 1.801s1.3-.807 1.3-1.801c-.001-.992-.582-1.799-1.3-1.799zm4.526-4.683c.149-.365.155-2.439-.635-4.426c0 0-1.811.199-4.551 2.08c-.575-.16-1.548-.238-2.519-.238c-.973 0-1.945.078-2.52.238C4.74 2.399 2.929 2.2 2.929 2.2c-.789 1.987-.781 4.061-.634 4.426C1.367 7.634.8 8.845.8 10.497c0 7.186 5.963 7.301 7.467 7.301l1.734.002l1.732-.002c1.506 0 7.467-.115 7.467-7.301c0-1.652-.566-2.863-1.494-3.871zm-7.678 10.289h-.056c-3.771 0-6.709-.449-6.709-4.115c0-.879.31-1.693 1.047-2.369C5.537 9.304 7.615 9.9 9.972 9.9h.056c2.357 0 4.436-.596 5.664.531c.735.676 1.045 1.49 1.045 2.369c0 3.666-2.937 4.115-6.709 4.115zm-3.207-5.606c-.718 0-1.3.807-1.3 1.799c0 .994.582 1.801 1.3 1.801c.719 0 1.301-.807 1.301-1.801c0-.992-.582-1.799-1.301-1.799z" />
           </svg>
         </a>
-        <a href="https://www.instagram.com/cdudenetworks/" target="blank"> 
-           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 256 256"  class="fill-cyan-800 hover:cursor-pointer hover:fill-black">
+        <a href="https://www.linkedin.com/in/jeya-rosini-a4255421a/">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 20 20"
+            class="fill-black hover:cursor-pointer hover:fill-white">
+            <path
+              d="M10 .4C4.698.4.4 4.698.4 10s4.298 9.6 9.6 9.6s9.6-4.298 9.6-9.6S15.302.4 10 .4zM7.65 13.979H5.706V7.723H7.65v6.256zm-.984-7.024c-.614 0-1.011-.435-1.011-.973c0-.549.409-.971 1.036-.971s1.011.422 1.023.971c0 .538-.396.973-1.048.973zm8.084 7.024h-1.944v-3.467c0-.807-.282-1.355-.985-1.355c-.537 0-.856.371-.997.728c-.052.127-.065.307-.065.486v3.607H8.814v-4.26c0-.781-.025-1.434-.051-1.996h1.689l.089.869h.039c.256-.408.883-1.01 1.932-1.01c1.279 0 2.238.857 2.238 2.699v3.699z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!----First page context-->
+  <section class=" grid grid-flow-col mt-8 gap-x-72">
+    <div>
+      <div>
+        <h1 class="text-2xl font-bold pb-4 text-center text-cyan-700">Context</h1>
+      </div>
+      <ul class="text-zinc-9500 text-xl border-2 p-4 mx-16 shadow-2xl rounded border-cyan-500">
+        <a href="#intro" class="hover:cursor-pointer hover:text-cyan-700">
+          <li>
+            Introduction
+          </li>
+        </a>
+        <a href="#basics" class="hover:cursor-pointer hover:text-cyan-700">
+          <li>
+            Basics
+          </li>
+        </a>
+        <a href="#properties" class="hover:cursor-pointer hover:text-cyan-700">
+          <li>
+            Properties
+          </li>
+        </a>
+        <a href="#terminology" class="hover:cursor-pointer hover:text-cyan-700">
+          <li>
+            Terminology
+          </li>
+        </a>
+        <a href="#animation" class="hover:cursor-pointer hover:text-cyan-700">
+          <li>
+            Animation
+          </li>
+        </a>
+        <a href="#reference" class="hover:cursor-pointer hover:text-cyan-700">
+          <li>
+            Other Reference
+          </li>
+        </a>
+      </ul>
+    </div>
+
+
+    <!---Firsr page Logo-->
+
+    <div class="m-8 space-x-2">
+      <span class="  font-extrabold text-8xl border-2 border-cyan-400 p-2 bg-cyan-200 rounded">G</span>
+      <span class=" font-extrabold text-8xl border-2 border-cyan-400 bg-cyan-200 p-2 rounded">R</span>
+      <span class=" font-extrabold text-8xl border-2 border-cyan-400 bg-cyan-200 p-2 rounded">I</span>
+      <span class=" font-extrabold text-8xl border-2 border-cyan-400 bg-cyan-200 p-2 rounded">D</span>
+      <span class="text-6xl font-medium text-black">All</span>
+    </div>
+  </section>
+  <!----First page Socail media-->
+  <section>
+    <div class="bg-cyan-200 max-w-md flex items-center p-2 m-4 space-x-6 rounded">
+      <h6 class="font-medium ">Follow Us:</h6>
+      <a href="https://www.facebook.com/CdudeNetworks/" target="blank">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+          class="fill-cyan-800 hover:cursor-pointer hover:fill-black">
+          <path
+            d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z" />
+        </svg>
+      </a>
+      <a href="https://www.instagram.com/cdudenetworks/" target="blank">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 256 256"
+          class="fill-cyan-800 hover:cursor-pointer hover:fill-black">
           <path
             d="M176 24H80a56.06 56.06 0 0 0-56 56v96a56.06 56.06 0 0 0 56 56h96a56.06 56.06 0 0 0 56-56V80a56.06 56.06 0 0 0-56-56Zm-48 152a48 48 0 1 1 48-48a48.05 48.05 0 0 1-48 48Zm60-96a12 12 0 1 1 12-12a12 12 0 0 1-12 12Zm-28 48a32 32 0 1 1-32-32a32 32 0 0 1 32 32Z" />
         </svg>
       </a>
-       <a href="https://twitter.com/cdudenetworks" target="blank">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 14 14"  class="fill-cyan-800 hover:cursor-pointer hover:fill-black">
+      <a href="https://twitter.com/cdudenetworks" target="blank">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 14 14"
+          class="fill-cyan-800 hover:cursor-pointer hover:fill-black">
+          <path
+            d="M7 0c3.87 0 7 3.13 7 7s-3.13 7-7 7s-7-3.13-7-7s3.13-7 7-7ZM5.72 10.69c3.1 0 4.8-2.57 4.8-4.8v-.22c.33-.24.62-.54.84-.88c-.3.13-.63.22-.97.27c.35-.21.62-.54.74-.93c-.33.19-.69.33-1.07.41c-.31-.33-.75-.53-1.23-.53c-.93 0-1.69.76-1.69 1.69c0 .13.01.26.05.38c-1.4-.07-2.65-.74-3.48-1.76c-.14.25-.23.54-.23.85c0 .58.3 1.1.75 1.4c-.28 0-.54-.08-.76-.21v.02c0 .82.58 1.5 1.35 1.66c-.14.04-.29.06-.44.06c-.11 0-.21-.01-.32-.03c.21.67.84 1.16 1.57 1.17c-.58.45-1.31.72-2.1.72c-.14 0-.27 0-.4-.02c.74.48 1.63.76 2.58.76"
+            class="cls-1" />
+        </svg>
+      </a>
+
+    </div>
+  </section>
+
+  <!----Intropage navigation---->
+  <div class="relative">
+    <a href="#intro" class="absolute right-4 bottom-4 mr-8">
+      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"
+        class="fill-cyan-500 hover:fill-cyan-800">
         <path
-          d="M7 0c3.87 0 7 3.13 7 7s-3.13 7-7 7s-7-3.13-7-7s3.13-7 7-7ZM5.72 10.69c3.1 0 4.8-2.57 4.8-4.8v-.22c.33-.24.62-.54.84-.88c-.3.13-.63.22-.97.27c.35-.21.62-.54.74-.93c-.33.19-.69.33-1.07.41c-.31-.33-.75-.53-1.23-.53c-.93 0-1.69.76-1.69 1.69c0 .13.01.26.05.38c-1.4-.07-2.65-.74-3.48-1.76c-.14.25-.23.54-.23.85c0 .58.3 1.1.75 1.4c-.28 0-.54-.08-.76-.21v.02c0 .82.58 1.5 1.35 1.66c-.14.04-.29.06-.44.06c-.11 0-.21-.01-.32-.03c.21.67.84 1.16 1.57 1.17c-.58.45-1.31.72-2.1.72c-.14 0-.27 0-.4-.02c.74.48 1.63.76 2.58.76"
-          class="cls-1" />
+          d="M11.65 14.65q.15.15.35.15t.35-.15l2.8-2.8q.25-.25.125-.55T14.8 11H9.2q-.35 0-.475.3t.125.55l2.8 2.8ZM12 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Z" />
       </svg>
     </a>
-          
-        </div>
-      </section>
-    
-<!----Intropage navigation---->
-      <div class="relative">
-        <a href="./intro.html" class="absolute right-4 bottom-4 mr-8"> 
-           <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" class="fill-cyan-500 hover:fill-cyan-800">
-          <path
-            d="M11.65 14.65q.15.15.35.15t.35-.15l2.8-2.8q.25-.25.125-.55T14.8 11H9.2q-.35 0-.475.3t.125.55l2.8 2.8ZM12 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Z" />
-        </svg>
-        </a>
+  </div>
+  <!----Introduction-->
+  <section id="intro">
+    <div>
+      <div class="font-semibold text-4xl text-center text-white bg-cyan-500 p-2">
+        <h3>Hi 👋, I am CSS Grid</h3>
       </div>
-<!----Introduction-->
-<!-----Basics---->
-<section class="basics bg-cyan-500">
-      <!---Third page heading---->
-      <div class="pt-4 text-center">
-        <h1 class="font-semibold p-2 text-white text-4xl">Welcome, Knowing me better is must</h1>
+      <div class="grid grid-cols-2 items-center bg-amber-200 gap-8 m-8">
+          <div class="p-6">
+           <h2 class="italic font-bold text-2xl">First layout to give different View</h2>
+            <p class="pt-2 text-lg">Grid is the first layout to make the content as user interface in different case</p>
+          </div>
+          <div class="text-white border-2 border-cyan-700 bg-cyan-700 p-3 rounded shadow-xl">
+            <h3 class="font-medium text-center pb-3">
+              Frequently asked questions?
+            </h3>
+            <u class="space-y-2">
+              <li>
+                How grid is applied?
+              </li>
+              <li>
+                How to change the positions in grid?
+              </li>
+              <li>
+                When we have to use grid?
+              </li>
+            </u>
+          </div>
+      </div>
     </div>
-  
+  </section>
+  <!-----Basics---->
+  <section class="bg-cyan-500" id="basics">
+    <!---Third page heading---->
+    <div class="pt-4 text-center">
+      <h1 class="font-semibold p-2 text-white text-4xl">Welcome 🙏, Knowing me better is must</h1>
+    </div>
+
     <!---content----->
     <section class="pb-4">
-        <div class="pb-8 pt-8">
-            <div class="flex flex-row items-center space-x-4 ml-6 text-center">
-                <p class="text-3xl font-semibold">How to define me?</p>
-                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" class="fill-white hover:curosr-pointer hover:fill-cyan-800 animate-bounce">
-                    <path
-                        d="M9.525 18.025q-.5.325-1.012.038T8 17.175V6.825q0-.6.513-.888t1.012.038l8.15 5.175q.45.3.45.85t-.45.85l-8.15 5.175Z" />
-                </svg>
-                <p class="text-xl border-2 rounded p-2 bg-cyan-800 text-white">display: grid</p>
-            </div>
+      <div class="pb-8 pt-8">
+        <div class="flex flex-row items-center space-x-4 ml-6 text-center">
+          <p class="text-3xl font-semibold">How to define me?</p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
+            class="fill-white hover:curosr-pointer hover:fill-cyan-800 animate-bounce">
+            <path
+              d="M9.525 18.025q-.5.325-1.012.038T8 17.175V6.825q0-.6.513-.888t1.012.038l8.15 5.175q.45.3.45.85t-.45.85l-8.15 5.175Z" />
+          </svg>
+          <p class="text-xl border-2 rounded p-2 bg-cyan-800 text-white">display: grid</p>
         </div>
-  
-        <div class="m-4 border-2 max-w-sm bg-cyan-800 text-white p-2 text-lg"> 
-           <div>Grid-template-col</div>
-           <div>Grid-template-row</div> 
-           <div>Grid-col</div>
-           <div>Grid-row</div>
-        </div>
+      </div>
+
+      <div class="m-4 border-2 max-w-sm bg-cyan-800 border-cyan-800  text-white p-2 text-lg rounded">
+        <div>Grid-template-col</div>
+        <div>Grid-template-row</div>
+        <div>Grid-col</div>
+        <div>Grid-row</div>
+      </div>
     </section>
-</section>
-<!---Properties---->
-<!---Terminology----->
-<section>
-  <div>
-    <div class="text-4xl font-bold text-center">
-      <h4>Key features of Grid</h4>
+  </section>
+  <!---Properties---->
+  <section id="properties">
+    <div>
+      
     </div>
-    
-  </div>
-</section>
-<!---Animation---->
-<section class="bg-cyan-500">
-  <div class="p-4 text-center text-4xl font-bold text-black bg-amber-200">
-    <h4>Animate me</h4>
-  </div>
-<div class="grid-flow-col grid gap-4 p-4 m-8">
-  <div class="border-2 text-center font-semibold p-2 hover:cursor-pointer hover:bg-cyan-800 hover:text-white shadow-xl">
-    <p>Grid-Gap</p>
-  </div>
-  <div class="border-2 text-center font-semibold p-2 hover:cursor-pointer hover:bg-cyan-800 hover:text-white shadow-xl">
-    <p>Grid-row-gap</p>
-  </div>
-  <div class="border-2 text-center font-semibold p-2 hover:cursor-pointer hover:bg-cyan-800 hover:text-white shadow-xl">
-    <p>Grid-col-Gap</p>
-  </div>
-  <div class="border-2 text-center font-semibold p-2 hover:cursor-pointer hover:bg-cyan-800 hover:text-white shadow-xl">
-    <p>Grid-template-col</p>
-  </div>
-  <div class="border-2 text-center font-semibold p-2 hover:cursor-pointer hover:bg-cyan-800 hover:text-white shadow-xl">
-    <p>Grid-template-row</p>
-  </div>
-</div>
-</section>
-<!---reference---->
-    <!---Heading---->
 
-    <div class="reference text-center text-3xl font-semibold p-2">
-      <h4>Know more about CSS</h4>    
-    </div>
-  
-    <!---content---->
-    <div class="mx-10 my-8">
-      <div class="m-4 text-lg font-medium">
-        <h4>Follow: <a href="https://www.youtube.com/@CyberDudeNetworks" target="_blank" class="text-cyan-500 hover:text-cyan-800 hover:cursor-pointer">CyberDude Networks</a></h4>
+  </section>
+  <!---Terminology----->
+  <section id="terminology">
+    <div>
+      <div class="text-4xl font-bold text-center">
+        <h4>Key features of Grid</h4>
       </div>
-      <div class="flex items-center justify-center space-x-2 p-2 border-cyan-500 shadow-xl">
-        <div>
-          <h4 class="text-xl font-medium">Videos</h4>
+      <div class="grid grid-flow-col gap-4 m-6 mb-8">
+        <div class="flex items-center justify-center space-x-2">
+          <a href="#grid-container" class="border-2 p-2 hover:text-cyan-700 border-cyan-500 rounded shadow-xl text-center font-bold">Grid-container
+          <div>
+            <img src="./public/Image/Grid-container.png" alt="grid-container" class="w-52 h-52 rounded outline-cyan-500 object-contain" id="grid-container">
+          </div>
+        </a>
         </div>
-        <img src="./public/Image/Bem CSS.png" alt="BEM CSS" class="w-56 h-56 object-contain">
-        <img src="./public/Image/CSS Flexbox.png" alt="CSS Flexbox" class="w-56 h-56 object-contain">
-        <img src="./public/Image/CSS.png" alt="CSS"  class="w-56 h-56 object-contain">
+        <div class="flex items-center justify-center space-x-2">
+          <a href="#grid-container" class="border-2 p-2 border-cyan-500 hover:text-cyan-700 rounded shadow-xl text-center font-bold">Grid-area
+          <div>
+            <img src="./public/Image/grid-area.png" alt="grid-container" class="w-52 h-52 rounded outline-cyan-500 object-contain" id="grid-container">
+          </div>
+        </a>
+        </div>
+        <div class="flex items-center justify-center space-x-2">
+          <a href="#grid-container" class="border-2 p-2 border-cyan-500 hover:text-cyan-700 rounded shadow-xl text-center font-bold">Grid-items
+          <div>
+            <img src="./public/Image/grid-items.png" alt="grid-container" class="w-52 h-52 rounded outline-cyan-500 object-contain" id="grid-container">
+          </div>
+        </a>
+        </div>
+        <div class="flex items-center justify-center space-x-2">
+          <a href="#grid-container" class="border-2 p-2 border-cyan-500 hover:text-cyan-700 rounded shadow-xl text-center font-bold">Grid-track
+          <div>
+            <img src="./public/Image/grid-track.png" alt="grid-container" class="w-52 h-52 rounded outline-cyan-500 object-contain" id="grid-container">
+          </div>
+        </a>
+        </div>
+        <div class="flex items-center justify-center space-x-2">
+          <a href="#grid-container" class="border-2 p-2 border-cyan-500 hover:text-cyan-700 rounded shadow-xl text-center font-bold">Grid-Line
+          <div>
+            <img src="./public/Image/grid-line.png" alt="grid-container" class="w-52 h-52 rounded outline-cyan-500 object-contain" id="grid-container">
+          </div>
+        </a>
+        </div>
+        <div class="flex items-center justify-center space-x-2">
+          <a href="#grid-container" class="border-2 p-2 border-cyan-500 hover:text-cyan-700 rounded shadow-xl text-center font-bold">Grid-cell
+          <div>
+            <img src="./public/Image/grid-cell.png" alt="grid-container" class="w-52 h-52 rounded outline-cyan-500 object-contain" id="grid-container">
+          </div>
+        </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!---Animation---->
+  <section class="bg-cyan-500" id="animation">
+    <div class="p-4 text-center text-4xl font-bold text-black">
+      <h4>Animate me</h4>
+    </div>
+    <div class="grid-flow-col grid gap-4 p-4 m-8">
+      <div
+        class="border-2 rounded text-center font-semibold p-2 hover:cursor-pointer hover:bg-cyan-800 hover:text-white shadow-xl">
+        <p>Grid-Gap</p>
+      </div>
+      <div
+        class="border-2 rounded text-center font-semibold p-2 hover:cursor-pointer hover:bg-cyan-800 hover:text-white shadow-xl">
+        <p>Grid-row-gap</p>
+      </div>
+      <div
+        class="border-2 rounded text-center font-semibold p-2 hover:cursor-pointer hover:bg-cyan-800 hover:text-white shadow-xl">
+        <p>Grid-col-Gap</p>
+      </div>
+      <div
+        class="border-2 rounded text-center font-semibold p-2 hover:cursor-pointer hover:bg-cyan-800 hover:text-white shadow-xl">
+        <p>Grid-template-col</p>
+      </div>
+      <div
+        class="border-2 rounded text-center font-semibold p-2 hover:cursor-pointer hover:bg-cyan-800 hover:text-white shadow-xl">
+        <p>Grid-template-row</p>
       </div>
     </div>
+  </section>
+  <!---reference---->
+  <!---Heading---->
 
-<!---footer----->
-<section>
-  <div>
-     <div class="font-medium text-sm m-6 text-center text-black">
-      <p>Copr. 2023 H.Jeya Rosini</p>
-      <a href="#top" class="text-cyan-500 p-1">Go Home</a>
-     </div>
-     <div class="m-2 p-2">
-      <p><span class="font-semibold text-sm">Note: </span>This project is done as a Junior Intern offered as 6-Month Internship Program by <a href="https://www.cyberdudenetworks.com/" target="_blank" class="text-cyan-500 hover:text-white">CyberDude Networks Pvt.Ltd</a> under the guidance of <span class="text-cyan-500">Mr. Anbuselvan</span></p>
-     </div>
+  <div class="text-center text-3xl font-semibold p-2" id="reference">
+    <h4>Know more about CSS</h4>
   </div>
-</section>
-  </body>
+
+  <!---content---->
+  <div class="mx-10 my-8">
+    <div class="m-4 text-lg font-medium">
+      <h4>Follow: <a href="https://www.youtube.com/@CyberDudeNetworks" target="_blank"
+          class="text-cyan-500 hover:text-cyan-800 hover:cursor-pointer">CyberDude Networks</a></h4>
+    </div>
+    <div class="flex items-center justify-center space-x-2 p-2 border-cyan-500 shadow-xl">
+      <div>
+        <h4 class="text-xl font-medium">Videos</h4>
+      </div>
+      <img src="./public/Image/Bem CSS.png" alt="BEM CSS" class="w-56 h-56 object-contain">
+      <img src="./public/Image/CSS Flexbox.png" alt="CSS Flexbox" class="w-56 h-56 object-contain">
+      <img src="./public/Image/CSS.png" alt="CSS" class="w-56 h-56 object-contain">
+    </div>
+  </div>
+
+  <!---footer----->
+  <section>
+    <div>
+      <div class="font-medium text-sm m-6 text-center text-black">
+        <p>Copr. 2023 H.Jeya Rosini</p>
+        <a href="#top" class="text-cyan-500 p-1">Go Home</a>
+      </div>
+      <div class="m-2 p-2">
+        <p><span class="font-semibold text-sm">Note: </span>This project is done as a Junior Intern offered as 6-Month
+          Internship Program by <a href="https://www.cyberdudenetworks.com/" target="_blank"
+            class="text-cyan-500 hover:text-white">CyberDude Networks Pvt.Ltd</a> under the guidance of <span
+            class="text-cyan-500">Mr. Anbuselvan</span></p>
+      </div>
+    </div>
+  </section>
+</body>
+
 </html>
