@@ -12,7 +12,7 @@
 
 </head>
 
-<body class="bg-amber-200">
+<body class="bg-slate-800">
   <!------First page header---->
 
   <section>
@@ -50,9 +50,9 @@
   <section class=" grid grid-flow-col mt-8 gap-x-72">
     <div>
       <div>
-        <h1 class="text-2xl font-bold pb-4 text-center text-cyan-700">Context</h1>
+        <h1 class="text-2xl font-bold pb-4 text-center text-cyan-500">Context</h1>
       </div>
-      <ul class="text-zinc-9500 text-xl border-2 p-4 mx-16 shadow-2xl rounded border-cyan-500">
+      <ul class="text-white text-xl border-2 p-4 mx-16 shadow-lg shadow-slate-600 rounded border-cyan-500">
         <a href="#intro" class="hover:cursor-pointer hover:text-cyan-700">
           <li>
             Introduction
@@ -90,11 +90,11 @@
     <!---Firsr page Logo-->
 
     <div class="m-8 space-x-2">
-      <span class="  font-extrabold text-8xl border-2 border-cyan-400 p-2 bg-cyan-200 rounded">G</span>
-      <span class=" font-extrabold text-8xl border-2 border-cyan-400 bg-cyan-200 p-2 rounded">R</span>
-      <span class=" font-extrabold text-8xl border-2 border-cyan-400 bg-cyan-200 p-2 rounded">I</span>
-      <span class=" font-extrabold text-8xl border-2 border-cyan-400 bg-cyan-200 p-2 rounded">D</span>
-      <span class="text-6xl font-medium text-black">All</span>
+      <span class="  font-bold text-8xl border-2 border-cyan-400 bg-cyan-200 rounded">G</span>
+      <span class=" font-bold text-8xl border-2 border-cyan-400 bg-cyan-200 rounded">R</span>
+      <span class=" font-bold text-8xl border-2 border-cyan-400 bg-cyan-200 rounded">I</span>
+      <span class=" font-bold text-8xl border-2 border-cyan-400 bg-cyan-200 rounded">D</span>
+      <span class="text-6xl font-medium text-white">All</span>
     </div>
   </section>
   <!----First page Socail media-->
@@ -143,13 +143,13 @@
       <div class="font-semibold text-4xl text-center text-white bg-cyan-500 p-2">
         <h3>Hi 👋, I am CSS Grid</h3>
       </div>
-      <div class="grid grid-cols-2 items-center bg-amber-200 gap-8 m-8">
-          <div class="p-6">
+      <div class="grid grid-cols-2 items-center gap-8 m-8">
+          <div class="border-cyan-700 shadow-lg shadow-cyan-600 text-white p-2 pr-2 rounded">
            <h2 class="italic font-bold text-2xl">First layout to give different View</h2>
             <p class="pt-2 text-lg">Grid is the first layout to make the content as user interface in different case</p>
           </div>
-          <div class="text-white border-2 border-cyan-700 bg-cyan-700 p-3 rounded shadow-xl">
-            <h3 class="font-medium text-center pb-3">
+          <div class="text-white border-2 border-cyan-700 bg-cyan-700 p-2 rounded shadow-lg shadow-cyan-600">
+            <h3 class="font-medium text-center pb-2">
               Frequently asked questions?
             </h3>
             <u class="space-y-2">
@@ -198,18 +198,59 @@
   </section>
   <!---Properties---->
   <section id="properties">
-    <div>
-      
+    <div class="text-white m-4">
+      <h3 class="text-center text-4xl font-semibold pb-3">Belongings of Grid</h3>
+      <div class="flex flex-col space-y-8 font-semibold text-lg text-cyan-500">
+        <div class="flex flex-row items-center space-x-4">
+          <h4>Parent Property</h4>
+          <img src="./public/Image/parent.png" alt="parent-prop." class="object-contain w-64 h-64">
+          <img src="./public/Image/paren-1.png" alt="parent-1" class="object-contain w-64 h-64">
+          <img src="./public/Image/align-parent-2.png" alt="parent-2" class="object-contain w-64 h-64">
+          <img src="./public/Image/parent-3.png" alt="" class="object-contain w-64 h-64">
+        </div>
+        <div class="flex flex-row items-center space-x-4">
+          <h4>Child Property</h4>
+          <img src="./public/Image/grid-col-row-s-e.png" alt="grid-template-col-child" class="object-contain w-64 h-64">
+          <img src="./public/Image/grid-col-row.png" alt="grid-col-row-child" class="object-contain w-64 h-64">
+          <img src="./public/Image/grid-area-child.png" alt="grid-area-child" class="object-contain w-64 h-64">
+          <img src="./public/Image/sub-grid-child.png" alt="sub-grid-child" class="object-contain w-64 h-64">
+        </div>
+        <div class="flex flex-row items-center">
+          <h4>Positioning Grid</h4>
+          <div class="flex flex-row gap-3">
+            <h5 class="text-lg font-medium text-white text-center">Child</h5>
+            <img src="./public/Image/positioning-child.png" alt="justify-content" class="object-contain w-64 h-64">
+          <img src="./public/Image/positioning-child-2.png" alt="place-content" class="object-contain w-64 h-64">
+          </div>
+          <div class="flex flex-row gap-3">
+            <h5 class="text-lg font-medium text-white text-center pl-2">Parent</h5>
+            <img src="./public/Image/positoining-parent.png" alt="justify-content" class="object-contain w-64 h-64">
+            <img src="./public/Image/positioning-parent-1.png" alt="place-content" class="object-contain w-64 h-64">
+          </div>
+        </div>
+        <div class="flex flex-row items-center space-x-4">
+          <h4>Align grid</h4>
+          <div class="flex flex-row spce-x-2">
+            <h5 class="text-lg font-medium text-white text-center">Child</h5>
+            <img src="./public/Image/align-child.png" alt="justify-content" class="object-contain w-64 h-64">
+          </div>
+          <div class="flex flex-row spce-x-4">
+            <h5 class="text-lg font-medium text-white text-center">Parent</h5>
+            <img src="./public/Image/align-parent.png" alt="justify-content" class="object-contain w-64 h-64">
+            <img src="./public/Image/align-parent-2.png" alt="justify-content" class="object-contain w-64 h-64">
+          </div>
+        </div>
+      </div>
     </div>
-
+<hr class="border border-slate-700">
   </section>
   <!---Terminology----->
   <section id="terminology">
     <div>
-      <div class="text-4xl font-bold text-center">
+      <div class="text-4xl font-bold text-center pt-4 text-white">
         <h4>Key features of Grid</h4>
       </div>
-      <div class="grid grid-flow-col gap-4 m-6 mb-8">
+      <div class="grid grid-flow-col gap-4 m-6 mb-8 text-white">
         <div class="flex items-center justify-center space-x-2">
           <a href="#grid-container" class="border-2 p-2 hover:text-cyan-700 border-cyan-500 rounded shadow-xl text-center font-bold">Grid-container
           <div>
@@ -292,10 +333,10 @@
   </div>
 
   <!---content---->
-  <div class="mx-10 my-8">
+  <div class="mx-10 my-8 text-white">
     <div class="m-4 text-lg font-medium">
-      <h4>Follow: <a href="https://www.youtube.com/@CyberDudeNetworks" target="_blank"
-          class="text-cyan-500 hover:text-cyan-800 hover:cursor-pointer">CyberDude Networks</a></h4>
+      <h4>Follow : <a href="https://www.youtube.com/@CyberDudeNetworks" target="_blank"
+          class="text-cyan-500 hover:text-cyan-300 hover:cursor-pointer"> CyberDude Networks</a></h4>
     </div>
     <div class="flex items-center justify-center space-x-2 p-2 border-cyan-500 shadow-xl">
       <div>
@@ -310,11 +351,11 @@
   <!---footer----->
   <section>
     <div>
-      <div class="font-medium text-sm m-6 text-center text-black">
+      <div class="font-medium text-sm m-6 text-center text-white">
         <p>Copr. 2023 H.Jeya Rosini</p>
         <a href="#top" class="text-cyan-500 p-1">Go Home</a>
       </div>
-      <div class="m-2 p-2">
+      <div class="m-2 p-2 text-white">
         <p><span class="font-semibold text-sm">Note: </span>This project is done as a Junior Intern offered as 6-Month
           Internship Program by <a href="https://www.cyberdudenetworks.com/" target="_blank"
             class="text-cyan-500 hover:text-white">CyberDude Networks Pvt.Ltd</a> under the guidance of <span
