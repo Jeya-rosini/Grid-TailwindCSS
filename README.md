@@ -6,6 +6,14 @@ https://jeya-rosini.github.io/Grid-TailwindCSS/
 
 ## Screenshots
 
+![Responsive-design](<Responsive screenshot-3.png>) 
+
+![Responsive-design](<Responsive screenshot.png>) 
+
+![Responsive-design](<Responsive screenshot-1.png>) 
+
+![Responsive-design](<Responsive screenshot-2.png>)
+
 
 ## Author
 
