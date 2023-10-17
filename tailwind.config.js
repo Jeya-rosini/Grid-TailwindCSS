@@ -9,7 +9,7 @@ export default {
       colors: {
         'blue': '#121212',
         's-blue': '#30475E',
-        'l-blue': '#F05454',
+        'l-blue': '#ff7070',
         'll-blue': '#F5F5F5',
       },
       fontFamily: {
