@@ -14,6 +14,7 @@ export default {
       },
       fontFamily: {
         'pixelify-sans': ['Pixelify Sans','sans-serif'],
+        'fira-code': ['Fira-code','monospace'],
       },
     },
   },

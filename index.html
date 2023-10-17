@@ -41,7 +41,7 @@
         </a>
       </div>
       <div class="md:flex hidden items-center justify-center space-x-4 px-6">
-        <input type="text" placeholder="Search" class="p-2 outline-none text-black rounded">
+        <input type="text" placeholder="Search" name="Search" class="p-2 outline-none text-black rounded">
         <a href="https://github.com/Jeya-rosini/Grid-TailwindCSS" target="blank">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 20 20"
             class="fill-black hover:cursor-pointer hover:fill-ll-blue">
@@ -233,23 +233,23 @@
     <!---content----->
     <section class="pb-4">
       <div class="pb-8 pt-8">
-        <div class="flex flex-row items-center space-x-4 ml-6 text-center">
+        <div class="flex flex-row items-center space-x-4 m-6 text-center">
           <p class="text-3xl text-white font-semibold">How to define me?</p>
           <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
-            class="fill-white hover:curosr-pointer hover:fill-cyan-800 animate-bounce">
+            class="fill-white hover:curosr-pointer hover:fill-l-blue animate-bounce">
             <path
               d="M9.525 18.025q-.5.325-1.012.038T8 17.175V6.825q0-.6.513-.888t1.012.038l8.15 5.175q.45.3.45.85t-.45.85l-8.15 5.175Z" />
           </svg>
-          <p class="text-xl font-medium border-2 rounded p-2 bg-l-blue text-black">display: grid</p>
+          <p class="text-xl font-medium border-2 rounded font-fira-code p-2 bg-l-blue text-black">display:grid</p>
         </div>
       </div>
 
       <div
-        class="m-4 shadow box-shadow: 3px 2px shadow-l-blue bg-blue border-l-blue text-center text-white p-2 text-lg rounded">
-        <div>Grid-template-col</div>
-        <div>Grid-template-row</div>
-        <div>Grid-col</div>
-        <div>Grid-row</div>
+        class="m-4 font-fira-code shadow box-shadow: 3px 2px shadow-l-blue bg-blue border-l-blue text-center text-white p-2 text-lg rounded">
+        <div>grid-template-col</div>
+        <div>grid-template-row</div>
+        <div>grid-col</div>
+        <div>grid-row</div>
       </div>
     </section>
   </section>
@@ -268,7 +268,7 @@
           </div>
         </div>
         <hr class="w-full bg-s-blue opacity-25">
-        <div class="flex sm:flex-row flex-col items-center space-x-8 pb-3">
+        <div class="flex sm:flex-row flex-col items-center md:space-x-8 space-y-3 pb-3">
           <h4>Child Property</h4>
           <div class="grid sm:grid-cols-2 grid-col-1 gap-4 items-center">
             <img src="./public/Image/grid-col-row-s-e.png" alt="grid-template-col-child"
@@ -279,7 +279,7 @@
           </div>
         </div>
         <hr class="w-full bg-s-blue opacity-25">
-        <div class="flex sm:flex-row flex-col items-center space-x-8 pb-3">
+        <div class="flex sm:flex-row flex-col items-center md:space-x-8 space-y-3 pb-3">
           <h4>Positioning Grid</h4>
           <div class="flex flex-col gap-4">
             <div>
@@ -307,7 +307,7 @@
           </div>
         </div>
         <hr class="w-full bg-s-blue opacity-25">
-        <div class="flex sm:flex-row flex-col items-center space-x-8 pb-3">
+        <div class="flex sm:flex-row flex-col items-center md:space-x-8 space-y-3 pb-3">
           <h4>Align grid</h4>
           <div class="flex flex-col gap-3">
             <div>
@@ -336,13 +336,13 @@
   <!---Terminology----->
   <section id="terminology">
     <div class="bg-s-blue">
-      <div class="text-4xl font-bold font-pixelify-sans text-center pt-4 text-l-blue">
+      <div class="md:text-4xl text-2xl font-bold font-pixelify-sans text-center pt-4 text-l-blue">
         <h4>Key features of Grid</h4>
       </div>
-      <div class="grid md:grid-cols-3 grid-cols-2 gap-y-3 m-6 pb-8 text-white">
+      <div class="grid md:grid-cols-3 grid-cols-1 gap-y-3 m-6 pb-8 text-white">
         <div class="flex items-center justify-center space-x-2">
           <a href="#grid-container"
-            class="border-2 border-ll-blue p-2 hover:text-l-blue rounded text-center font-bold">Grid-container
+            class="border-2 border-ll-blue p-2 hover:text-l-blue rounded text-center font-fira-code font-bold">grid-container
             <div>
               <img src="./public/Image/Grid-container.png" alt="grid-container"
                 class="w-52 h-52 rounded outline-cyan-500 object-contain" id="grid-container">
@@ -351,7 +351,7 @@
         </div>
         <div class="flex items-center justify-center space-x-2">
           <a href="#grid-container"
-            class="border-2 p-2 border-ll-blue hover:text-l-blue rounded shadow-xl text-center font-bold">Grid-area
+            class="border-2 p-2 border-ll-blue hover:text-l-blue rounded shadow-xl text-center font-fira-code font-bold">grid-area
             <div>
               <img src="./public/Image/grid-area.png" alt="grid-container"
                 class="w-52 h-52 rounded outline-cyan-500 object-contain" id="grid-container">
@@ -360,7 +360,7 @@
         </div>
         <div class="flex items-center justify-center space-x-2">
           <a href="#grid-container"
-            class="border-2 p-2 border-ll-blue hover:text-l-blue rounded shadow-xl text-center font-bold">Grid-items
+            class="border-2 p-2 border-ll-blue hover:text-l-blue rounded shadow-xl text-center font-fira-code font-bold">grid-items
             <div>
               <img src="./public/Image/grid-items.png" alt="grid-container"
                 class="w-52 h-52 rounded outline-cyan-500 object-contain" id="grid-container">
@@ -368,10 +368,10 @@
           </a>
         </div>
       </div>
-      <div class="grid md:grid-cols-3 grid-cols-2 gap-y-3 m-6 pb-8 text-white">
+      <div class="grid md:grid-cols-3 grid-cols-1 gap-y-3 m-6 pb-8 text-white">
         <div class="flex items-center justify-center space-x-2">
           <a href="#grid-container"
-            class="border-2 p-2 border-ll-blue hover:text-l-blue rounded shadow-xl text-center font-bold">Grid-track
+            class="border-2 p-2 border-ll-blue hover:text-l-blue rounded shadow-xl text-center font-fira-code font-bold">grid-track
             <div>
               <img src="./public/Image/grid-track.png" alt="grid-container"
                 class="w-52 h-52 rounded outline-cyan-500 object-contain" id="grid-container">
@@ -380,7 +380,7 @@
         </div>
         <div class="flex items-center justify-center space-x-2">
           <a href="#grid-container"
-            class="border-2 p-2 border-ll-blue hover:text-l-blue rounded shadow-xl text-center font-bold">Grid-Line
+            class="border-2 p-2 border-ll-blue hover:text-l-blue rounded shadow-xl text-center font-fira-code font-bold">grid-Line
             <div>
               <img src="./public/Image/grid-line.png" alt="grid-container"
                 class="w-52 h-52 rounded outline-cyan-500 object-contain" id="grid-container">
@@ -389,7 +389,7 @@
         </div>
         <div class="flex items-center justify-center space-x-2">
           <a href="#grid-container"
-            class="border-2 p-2 border-ll-blue hover:text-l-blue rounded shadow-xl text-center font-bold">Grid-cell
+            class="border-2 p-2 border-ll-blue hover:text-l-blue rounded shadow-xl text-center font-fira-code font-bold">grid-cell
             <div>
               <img src="./public/Image/grid-cell.png" alt="grid-container"
                 class="w-52 h-52 rounded outline-cyan-500 object-contain" id="grid-container">
@@ -403,29 +403,33 @@
   </section>
   <!---Animation---->
   <section class="bg-l-blue" id="animation">
-    <div class="p-4 text-center font-pixelify-sans text-4xl font-bold text-black">
-      <h4>Animate me</h4>
+    <div class="flex items-center p-4 justify-center space-x-2 font-pixelify-sans text-4xl font-bold text-black">
+      <h4>Grid Animation Available</h4>
+     <a href="#animation" class="scroll-smooth"> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="fill-s-blue hover:cursor-pointer hover:fill-ll-blue scroll-smooth">
+      <path
+        d="m11 12.2l-.9-.9q-.275-.275-.7-.275t-.7.275q-.275.275-.275.7t.275.7l2.6 2.6q.3.3.7.3t.7-.3l2.6-2.6q.275-.275.275-.7t-.275-.7q-.275-.275-.7-.275t-.7.275l-.9.9V9q0-.425-.288-.713T12 8q-.425 0-.713.288T11 9v3.2Zm1 9.8q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Z" />
+    </svg></a>
     </div>
-    <div class="grid-flow-col grid-cols-5 grid gap-4 p-4 m-8">
+    <div class="grid md:grid-cols-5 grid-cols-2 gap-4 p-4 m-8 overflow-hidden font-fira-code" id="animation">
       <div
         class="border-2 rounded text-center font-semibold p-2 hover:cursor-pointer hover:bg-s-blue hover:text-white shadow-xl">
-        <p>Grid-Gap</p>
+        <p>grid-gap</p>
       </div>
       <div
         class="border-2 rounded text-center font-semibold p-2 hover:cursor-pointer hover:bg-s-blue hover:text-white shadow-xl">
-        <p>Grid-row-gap</p>
+        <p>grid-row-gap</p>
       </div>
       <div
         class="border-2 rounded text-center font-semibold p-2 hover:cursor-pointer hover:bg-s-blue hover:text-white shadow-xl">
-        <p>Grid-col-Gap</p>
+        <p>grid-col-gap</p>
       </div>
       <div
         class="border-2 rounded text-center font-semibold p-2 hover:cursor-pointer hover:bg-s-blue hover:text-white shadow-xl">
-        <p>Grid-template-col</p>
+        <p>grid-template-col</p>
       </div>
       <div
         class="border-2 rounded text-center font-semibold p-2 hover:cursor-pointer hover:bg-s-blue hover:text-white shadow-xl">
-        <p>Grid-template-row</p>
+        <p>grid-template-row</p>
       </div>
     </div>
   </section>
@@ -433,25 +437,78 @@
   <!---Heading---->
 
   <div class="text-center text-3xl font-pixelify-sans font-semibold p-2 text-white" id="reference">
-    <h4>Know more about CSS</h4>
+    <h4>Know more about <span class="text-l-blue">CSS</span></h4>
   </div>
 
   <!---content---->
   <div class="mx-10 my-8 text-l-blue">
-    <div class="m-4 text-lg font-medium">
+    <div class="text-xl font-medium pb-4">
       <h4>Follow : <a href="https://www.youtube.com/@CyberDudeNetworks" target="_blank"
           class="text-white hover:text-l-blue hover:cursor-pointer"> CyberDude Networks</a></h4>
     </div>
     <div>
-      <h4 class="text-xl font-medium pb-2">Videos</h4>
+      <h4 class="text-xl font-medium pb-4">Similar Videos</h4>
     </div>
-    <div class="flex items-center justify-center space-x-2 shadow box-shadow: 2px 2px shadow-l-blue p-2 pt-8 pb-8">
-      <div class="flex items-center space-x-2">
+    <div
+      class="grid md:grid-cols-4 grid-col-1 md:space-x-2 space-y-4 border-2 border-l-blue shadow box-shadow:4px 4px shadow-l-blue p-3">
+      <div class="flex flex-col items-center justify-center">
         <img src="./public/Image/Bem CSS.png" alt="BEM CSS"
           class="sm:w-56 sm:h-56 object-contain rounded overflow-hidden">
+        <a href="https://www.youtube.com/playlist?list=PL73Obo20O_7iROYs29LSXk_mCwVN0hscN" target="_blank"
+          class="hover:cursor-pointer hover:text-ll-blue">Advanced CSS</a>
+      </div>
+      <div class="flex flex-col items-center justify-center">
         <img src="./public/Image/CSS Flexbox.png" alt="CSS Flexbox"
           class="sm:w-56 sm:h-56 object-contain rounded overflow-hidden">
-        <img src="./public/Image/CSS.png" alt="CSS" class="sm:w-56 sm:h-56  object-contain rounded overflow-hidden">
+        <a href="https://www.youtube.com/playlist?list=PL73Obo20O_7hQzePIlNfRYSqT3g03tUT9" target="_blank"
+          class="hover:cursor-pointer hover:text-ll-blue">CSS Flexbox</a>
+      </div>
+      <div class="flex flex-col items-center justify-center">
+        <img src="./public/Image/CSS.png" alt="CSS" class="sm:w-56 sm:h-56 object-contain rounded overflow-hidden">
+        <a href="https://www.youtube.com/playlist?list=PL73Obo20O_7gGv4cLEOoqTF8_m8rPKyQh" target="_blank"
+          class="hover:cursor-pointer hover:text-ll-blue">CSS</a>
+      </div>
+      <div class="flex flex-col items-center justify-center">
+        <img src="./public/Image/SASS CSS.png" alt="SASS"
+          class="sm:w-56 sm:h-56 object-contain rounded overflow-hidden">
+        <a href="https://www.youtube.com/playlist?list=PL73Obo20O_7hdxU99FNNE-rowIltEwsNe" target="blank"
+          class="hover:cursor-pointer hover:text-ll-blue">SASS</a>
+      </div>
+    </div>
+    <div>
+      <h4 class="text-xl font-medium pb-4 pt-4">CSS Grid from other sources</h4>
+    </div>
+    <div
+      class="grid md:grid-cols-5 grid-col-1 md:space-x-2 space-y-4 border-2 border-l-blue shadow box-shadow:4px 4px shadow-l-blue p-3">
+      <div class="flex flex-col items-center justify-center">
+        <img src="./public/Image/CSS grid-1.png" alt="CSS Grid"
+          class="sm:w-56 sm:h-56 object-contain rounded overflow-hidden">
+        <a href="https://www.youtube.com/watch?v=BNmxUzPRYdw&t=80s" target="blank"
+          class="hover:cursor-pointer hover:text-ll-blue">CodewithHarry</a>
+      </div>
+      <div class="flex flex-col items-center justify-center">
+        <img src="./public/Image/CSS grid-2.png" alt="CSS grid"
+          class="sm:w-56 sm:h-56 object-contain rounded overflow-hidden">
+        <a href="https://www.youtube.com/watch?v=EiNiSFIPIQE" target="blank"
+          class="hover:cursor-pointer hover:text-ll-blue">Slaying The Dragon</a>
+      </div>
+      <div class="flex flex-col items-center justify-center">
+        <img src="./public/Image/CSS grid-3.png" alt="CSS grid"
+          class="sm:w-56 sm:h-56 object-contain rounded overflow-hidden">
+        <a href="https://www.youtube.com/watch?v=VN9hkmTvq3Y&t=17s" target="blank"
+          class="hover:cursor-pointer hover:text-ll-blue">Logic First Tamil</a>
+      </div>
+      <div class="flex flex-col items-center justify-center">
+        <img src="./public/Image/CSS grid-4.png" alt="CSS grid"
+          class="sm:w-56 sm:h-56 object-contain rounded overflow-hidden">
+        <a href="https://www.youtube.com/watch?v=Ak0emMY6U10&t=7s" target="blank"
+          class="hover:cursor-pointer hover:text-ll-blue">Beta Nanban</a>
+      </div>
+      <div class="flex flex-col items-center justify-center">
+        <img src="./public/Image/CSS grid-5.png" alt="CSS grid"
+          class="sm:w-56 sm:h-56 object-contain rounded overflow-hidden">
+        <a href="https://www.youtube.com/watch?v=x7tLPhnA06w&list=PL4cUxeGkcC9itC4TxYMzFCfveyutyPOCY" target="blank"
+          class="hover:cursor-pointer hover:text-ll-blue">Net Ninja</a>
       </div>
     </div>
   </div>
@@ -460,11 +517,12 @@
   <section>
     <div>
       <div class="font-medium text-sm m-6 text-center text-white">
-        <p>Copr. 2023 H.Jeya Rosini</p>
-        <a href="#top" class="text-l-blue p-1">Go Home</a>
+        <span>Copyright, 2023 H.Jeya Rosini <a href="#top" class="text-l-blue p-1">Go Home</a></span>
+
       </div>
-      <div class="m-2 p-2 text-white">
-        <p><span class="font-semibold text-sm">Note: </span>This project is done as a Junior Intern offered as 6-Month
+      <div class="m-4 p-2 text-white bg-s-blue">
+        <p><span class="font-semibold text-lg text-l-blue">Note : </span>This project is done as a Junior Intern offered
+          as 6-Month
           Internship Program by <a href="https://www.cyberdudenetworks.com/" target="_blank"
             class="text-l-blue hover:text-white">CyberDude Networks Pvt.Ltd</a> under the guidance of <span
             class="text-l-blue">Mr. Anbuselvan</span></p>
