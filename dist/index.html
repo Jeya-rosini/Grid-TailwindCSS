@@ -3,36 +3,46 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/Grid-TailwindCSS/assets/grid_110962-d0c6dad6.ico" />
+  <link rel="icon" type="image/svg+xml" href="/Grid-TailwindCSS/assets/grid-931c6330.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GRID All</title>
+  <title>GRID All - platform to learn CSS Grid</title>
 
   <!---input.css--->
   
 
-  
-  
+
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-  <link rel="stylesheet" href="/Grid-TailwindCSS/assets/index-3eab322b.css">
+  <link rel="stylesheet" href="/Grid-TailwindCSS/assets/index-62e8f8b5.css">
 </head>
 
 <body class="bg-blue">
   <!------First page header---->
 
   <section>
-    <div class="flex flex-row justify-between space-x-4 m-4 bg-l-blue p-2"
-      id="top">
-      <div class="md:flex hidden items-center space-x-4 text-black font-semibold text-xl">
+    <div class="flex flex-row justify-between space-x-4 m-4 bg-l-blue p-2 relative" id="top">
+      <div class="md:flex hidden items-center space-x-4 text-black font-semibold text-xl px-6">
         <a href="./index.html" class="hover:cursor-pointer hover:text-ll-blue">Home</a>
-        <a href="" class="hover:cursor-pointer hover:text-ll-blue">About</a>
+        <a href="./index.html" class="hover:cursor-pointer hover:text-ll-blue">About</a>
         <a href="#Q&A" class="hover:cursor-pointer hover:text-ll-blue">Q & A</a>
       </div>
       <div>
-        <img src="./Image/cyberdude-email.png" alt="cyberdude networks" class="w-32 h-32 rounded object-contain">
+        <a href="./index.html">
+          <img src="./Image/cyberdude-email.png" alt="cyberdude networks" class="md:w-32 h-32 w-56 h-56 object-contain">
+        </a>
       </div>
-      <div class="flex items-center justify-center space-x-4">
-        <input type="text" placeholder="Search" class="p-2 outline-none text-black rounded">
+      <div class="absolute top-24 right-10 md:hidden">
+        <a href="./index.html">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+            class="fill-black hover:fill-white rounded">
+            <path
+              d="M7 12a2 2 0 1 1-4 0a2 2 0 0 1 4 0Zm7 0a2 2 0 1 1-4 0a2 2 0 0 1 4 0Zm7 0a2 2 0 1 1-4 0a2 2 0 0 1 4 0Z" />
+          </svg>
+        </a>
+      </div>
+      <div class="md:flex hidden items-center justify-center space-x-4 px-6">
+        <input type="text" placeholder="Search" name="Search" class="p-2 outline-none text-black rounded">
         <a href="https://github.com/Jeya-rosini/Grid-TailwindCSS" target="blank">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 20 20"
             class="fill-black hover:cursor-pointer hover:fill-ll-blue">
@@ -57,35 +67,65 @@
       <div>
         <h1 class="text-2xl font-bold pb-4 text-center font-pixelify-sans text-l-blue">Context</h1>
       </div>
-      <ul class="text-white text-xl border-2 p-4 mx-16 shadow box-shadow:4px 4px shadow-ll-blue rounded border-white">
+      <ul
+        class="text-white text-xl border-2 p-4 mx-16 shadow py-4 box-shadow:4px 4px shadow-ll-blue rounded border-white">
         <a href="#intro" class="hover:cursor-pointer hover:text-l-blue">
-          <li>
-            Introduction
+          <li class="flex items-center space-x-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-l-blue">
+              <path
+                d="M11 6h3l3.29-3.3a1 1 0 0 1 1.42 0l2.58 2.59a1 1 0 0 1 0 1.41L19 9h-8v2a1 1 0 0 1-1 1a1 1 0 0 1-1-1V8a2 2 0 0 1 2-2m-6 5v4l-2.29 2.29a1 1 0 0 0 0 1.41l2.58 2.59a1 1 0 0 0 1.42 0L11 17h4a1 1 0 0 0 1-1v-1h1a1 1 0 0 0 1-1v-1h1a1 1 0 0 0 1-1v-1h-7v1a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2V9Z" />
+            </svg>
+            <span>Introduction</span>
           </li>
         </a>
         <a href="#basics" class="hover:cursor-pointer hover:text-l-blue">
-          <li>
-            Basics
+          <li class="flex items-center space-x-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 256 254" class="fill-l-blue">
+              <path
+                d="M79.072 0h99.949l-4.8 59.502l48.787-20.443l32.991 92.658l-54.412 15.811l34.125 46.375l-79.315 59.195l-30.475-47.422l-29.579 47.422l-80.947-59.195l38.287-46.375L0 131.717l30.366-92.658L82.67 59.502z" />
+              <path fill="#121212"
+                d="M107.425 27.406h41.87l-3.593 72.851l61.349-25.183l14.58 38.507l-65.354 18.819l41.459 56.94l-33.208 24.798l-39.275-59.571l-36.238 59.571l-34.741-24.798l45.753-56.94l-66.045-18.819l13.34-38.507l64.504 25.183z" />
+            </svg>
+            <span>Basics</span>
           </li>
         </a>
         <a href="#properties" class="hover:cursor-pointer hover:text-l-blue">
-          <li>
-            Properties
+          <li class="flex items-center space-x-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" class="stroke-l-blue">
+              <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d="M15 3v18" />
+                <rect width="18" height="18" x="3" y="3" rx="2" />
+                <path d="M21 9H3m18 6H3" />
+              </g>
+            </svg>
+            <span>Properties</span>
           </li>
         </a>
         <a href="#terminology" class="hover:cursor-pointer hover:text-l-blue">
-          <li>
-            Terminology
+          <li class="flex items-center space-x-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 448 512" class="fill-l-blue">
+              <path
+                d="M0 96C0 43 43 0 96 0h96v190.7c0 13.4 15.5 20.9 26 12.5l54-43.2l54 43.2c10.5 8.4 26 .9 26-12.5V0h64c17.7 0 32 14.3 32 32v320c0 17.7-14.3 32-32 32v64c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-53 0-96-43-96-96V96zm64 320c0 17.7 14.3 32 32 32h256v-64H96c-17.7 0-32 14.3-32 32z" />
+            </svg>
+            <span>Terminology</span>
           </li>
         </a>
         <a href="#animation" class="hover:cursor-pointer hover:text-l-blue">
-          <li>
-            Animation
+          <li class="flex items-center space-x-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 25" class="fill-l-blue">
+              <path
+                d="m11.41.06l3.716 6.174l7.02 1.626l-4.724 5.44l.623 7.18l-6.635-2.812l-6.634 2.811l.623-7.178L.676 7.86l7.02-1.626L11.41.061Zm0 3.88L8.972 7.99L4.365 9.058l3.1 3.572l-.41 4.711l4.355-1.845l4.355 1.845l-.409-4.711l3.1-3.572l-4.607-1.067L11.41 3.94Zm9.453 10.071l2.475 2.475l-1.414 1.414l-2.475-2.474l1.414-1.415Zm-8.296 6.116l2.474 2.475l-1.414 1.414l-2.475-2.475l1.415-1.414Zm6.578 0l2.474 2.475l-1.414 1.414l-2.475-2.475l1.415-1.414Z" />
+            </svg>
+            <span>Animation</span>
           </li>
         </a>
         <a href="#reference" class="hover:cursor-pointer hover:text-l-blue">
-          <li>
-            Other Reference
+          <li class="flex items-center space-x-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 20 20" class="fill-l-blue">
+              <path
+                d="M0 3v16h5V3zm4 12H1v-1h3zm0-3H1v-1h3zm2-9v16h5V3zm4 12H7v-1h3zm0-3H7v-1h3zm1-8.5l4.1 15.4l4.8-1.3l-4-15.3zm7 10.6l-2.9.8l-.3-1l2.9-.8zm-.8-2.9l-2.9.8l-.2-1l2.9-.8z" />
+            </svg>
+            <span>Other Reference</span>
           </li>
         </a>
       </ul>
@@ -108,21 +148,21 @@
       <h6 class="font-medium text-white">Follow Us :</h6>
       <a href="https://www.facebook.com/CdudeNetworks/" target="blank">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-          class="fill-blue hover:cursor-pointer hover:fill-l-blue">
+          class="fill-l-blue hover:cursor-pointer hover:fill-ll-blue">
           <path
             d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z" />
         </svg>
       </a>
       <a href="https://www.instagram.com/cdudenetworks/" target="blank">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 256 256"
-          class="fill-blue hover:cursor-pointer hover:fill-l-blue">
+          class="fill-l-blue hover:cursor-pointer hover:fill-ll-blue">
           <path
             d="M176 24H80a56.06 56.06 0 0 0-56 56v96a56.06 56.06 0 0 0 56 56h96a56.06 56.06 0 0 0 56-56V80a56.06 56.06 0 0 0-56-56Zm-48 152a48 48 0 1 1 48-48a48.05 48.05 0 0 1-48 48Zm60-96a12 12 0 1 1 12-12a12 12 0 0 1-12 12Zm-28 48a32 32 0 1 1-32-32a32 32 0 0 1 32 32Z" />
         </svg>
       </a>
       <a href="https://twitter.com/cdudenetworks" target="blank">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 14 14"
-          class="fill-blue hover:cursor-pointer hover:fill-l-blue">
+          class="fill-l-blue hover:cursor-pointer hover:fill-ll-blue">
           <path
             d="M7 0c3.87 0 7 3.13 7 7s-3.13 7-7 7s-7-3.13-7-7s3.13-7 7-7ZM5.72 10.69c3.1 0 4.8-2.57 4.8-4.8v-.22c.33-.24.62-.54.84-.88c-.3.13-.63.22-.97.27c.35-.21.62-.54.74-.93c-.33.19-.69.33-1.07.41c-.31-.33-.75-.53-1.23-.53c-.93 0-1.69.76-1.69 1.69c0 .13.01.26.05.38c-1.4-.07-2.65-.74-3.48-1.76c-.14.25-.23.54-.23.85c0 .58.3 1.1.75 1.4c-.28 0-.54-.08-.76-.21v.02c0 .82.58 1.5 1.35 1.66c-.14.04-.29.06-.44.06c-.11 0-.21-.01-.32-.03c.21.67.84 1.16 1.57 1.17c-.58.45-1.31.72-2.1.72c-.14 0-.27 0-.4-.02c.74.48 1.63.76 2.58.76"
             class="cls-1" />
@@ -136,7 +176,7 @@
   <div class="relative">
     <a href="#intro" class="absolute right-4 bottom-4 mr-8">
       <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"
-        class="fill-l-blue hover:fill-ll-blue">
+        class="fill-l-blue hover:fill-ll-blue scroll-smooth">
         <path
           d="M11.65 14.65q.15.15.35.15t.35-.15l2.8-2.8q.25-.25.125-.55T14.8 11H9.2q-.35 0-.475.3t.125.55l2.8 2.8ZM12 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Z" />
       </svg>
@@ -146,29 +186,41 @@
   <section id="intro" class="mt-16 mb-16">
     <div>
       <div class="font-semibold font-pixelify-sans text-4xl text-center text-black bg-l-blue p-2">
-        <h3>Hi, I am CSS Grid</h3>
+        <h3>Hi, I am <span class="underline underline-offset-4">CSS Grid</span></h3>
       </div>
-      <div class="grid grid-cols-2 items-center gap-8 m-8">
-          <div class="border-l-blue shadow box-shadow:2px 2px shadow-l-blue text-white p-2 pr-2 rounded">
-           <h2 class="italic font-bold text-2xl">First layout to give different View</h2>
-            <p class="pt-2 text-lg">Grid is the first layout to make the content as user interface in different case</p>
+      <div class="grid sm:grid-cols-2 grid-col-1 items-center sm:gap-8 gap-y-8 m-8">
+        <div class="border-l-blue shadow box-shadow:2px 2px shadow-l-blue text-white p-2 pr-2 rounded">
+          <div class="flex items-center space-x-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="fill-l-blue">
+              <path
+                d="m19 2l-5 4.5v11l5-4.5V2M6.5 5C4.55 5 2.45 5.4 1 6.5v14.66c0 .25.25.5.5.5c.1 0 .15-.07.25-.07c1.35-.65 3.3-1.09 4.75-1.09c1.95 0 4.05.4 5.5 1.5c1.35-.85 3.8-1.5 5.5-1.5c1.65 0 3.35.31 4.75 1.06c.1.05.15.03.25.03c.25 0 .5-.25.5-.5V6.5c-.6-.45-1.25-.75-2-1V19c-1.1-.35-2.3-.5-3.5-.5c-1.7 0-4.15.65-5.5 1.5V6.5C10.55 5.4 8.45 5 6.5 5Z" />
+            </svg>
+            <h2 class="italic font-bold sm:text-2xl text-xl">First layout to give different View</h2>
           </div>
-          <div class="text-white border-l-blue p-2 rounded shadow box-shadow:2px 2px shadow-l-blue">
-            <h3 class="font-bold text-2xl text-center pb-2">
+          <p class="pt-2 text-lg">Grid is the first layout to make the content as user interface in different case</p>
+        </div>
+        <div class="text-white border-l-blue p-2 rounded shadow box-shadow:2px 2px shadow-l-blue">
+          <div class="flex items-center space-x-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 20 20" class="fill-l-blue">
+              <path
+                d="M9.723 2.084a.5.5 0 0 1 .554 0a15.05 15.05 0 0 0 6.294 2.421A.5.5 0 0 1 17 5v4.5c0 3.891-2.307 6.73-6.82 8.467a.5.5 0 0 1-.36 0C5.308 16.23 3 13.39 3 9.5V5a.5.5 0 0 1 .43-.495a15.05 15.05 0 0 0 6.293-2.421ZM10.75 13.75a.75.75 0 1 0-1.5 0a.75.75 0 0 0 1.5 0Zm-2-5.5a1.25 1.25 0 1 1 2.5 0c0 .465-.27.762-.728 1.22l-.035.035c-.415.413-.987.983-.987 1.895v.1a.5.5 0 0 0 1 0v-.1c0-.467.27-.765.728-1.222l.037-.037c.414-.412.985-.981.985-1.891a2.25 2.25 0 0 0-4.5 0a.5.5 0 0 0 1 0Z" />
+            </svg>
+            <h3 class="font-bold sm:text-2xl text-xl text-center pb-2">
               Frequently asked questions?
             </h3>
-            <ul class="space-y-2">
-              <li class="hover:cursor-pointer hover:text-l-blue">
-                How grid is applied?
-              </li>
-              <li class="hover:cursor-pointer hover:text-l-blue">
-                How to change the positions in grid?
-              </li>
-              <li class="hover:cursor-pointer hover:text-l-blue">
-                When we have to use grid?
-              </li>
-            </ul>
           </div>
+          <ul class="space-y-3 text-lg">
+            <li class="hover:cursor-pointer hover:text-l-blue">
+              How grid is applied?
+            </li>
+            <li class="hover:cursor-pointer hover:text-l-blue">
+              How to change the positions in grid?
+            </li>
+            <li class="hover:cursor-pointer hover:text-l-blue">
+              When we have to use grid?
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
@@ -176,28 +228,29 @@
   <section class="bg-s-blue" id="basics">
     <!---Third page heading---->
     <div class="pt-4 text-center">
-      <h1 class="font-semibold p-2 font-pixelify-sans text-white text-4xl">Welcome, Knowing me better is must</h1>
+      <h1 class="font-semibold p-2 font-pixelify-sans text-white text-4xl">Welcome, Knowing me better is a must</h1>
     </div>
 
     <!---content----->
     <section class="pb-4">
       <div class="pb-8 pt-8">
-        <div class="flex flex-row items-center space-x-4 ml-6 text-center">
+        <div class="flex flex-row items-center space-x-4 m-6 text-center">
           <p class="text-3xl text-white font-semibold">How to define me?</p>
           <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
-            class="fill-white hover:curosr-pointer hover:fill-cyan-800 animate-bounce">
+            class="fill-white hover:curosr-pointer hover:fill-l-blue animate-bounce">
             <path
               d="M9.525 18.025q-.5.325-1.012.038T8 17.175V6.825q0-.6.513-.888t1.012.038l8.15 5.175q.45.3.45.85t-.45.85l-8.15 5.175Z" />
           </svg>
-          <p class="text-xl font-medium border-2 rounded p-2 bg-l-blue text-black">display: grid</p>
+          <p class="text-xl font-medium border-2 rounded font-fira-code p-2 bg-l-blue text-black">display:grid</p>
         </div>
       </div>
 
-      <div class="m-4 shadow box-shadow: 3px 2px shadow-l-blue bg-blue border-l-blue text-center text-white p-2 text-lg rounded">
-        <div>Grid-template-col</div>
-        <div>Grid-template-row</div>
-        <div>Grid-col</div>
-        <div>Grid-row</div>
+      <div
+        class="m-4 font-fira-code shadow box-shadow: 3px 2px shadow-l-blue bg-blue border-l-blue text-center text-white p-2 text-lg rounded">
+        <div>grid-template-col</div>
+        <div>grid-template-row</div>
+        <div>grid-col</div>
+        <div>grid-row</div>
       </div>
     </section>
   </section>
@@ -208,25 +261,26 @@
       <div class="flex flex-col space-y-8 font-semibold justify-center items-center text-lg text-l-blue">
         <div class="flex sm:flex-row flex-col items-center space-x-8 pb-3">
           <h4>Parent Property</h4>
-         <div class="grid sm:grid-cols-2 grid-col-1 gap-4 items-center">
-          <img src="/Grid-TailwindCSS/assets/parent-a93040c2.png" alt="parent-prop." class="object-contain w-64 h-64">
-          <img src="/Grid-TailwindCSS/assets/paren-1-2185c3d2.png" alt="parent-1" class="object-contain w-64 h-64">
+          <div class="grid sm:grid-cols-2 grid-col-1 gap-4 items-center">
+            <img src="/Grid-TailwindCSS/assets/parent-a93040c2.png" alt="parent-prop." class="object-contain w-64 h-64">
+            <img src="/Grid-TailwindCSS/assets/paren-1-2185c3d2.png" alt="parent-1" class="object-contain w-64 h-64">
             <img src="/Grid-TailwindCSS/assets/align-parent-2-3321503e.png" alt="parent-2" class="object-contain w-64 h-64">
             <img src="/Grid-TailwindCSS/assets/parent-3-d6cfd2ab.png" alt="" class="object-contain w-64 h-64">
           </div>
         </div>
         <hr class="w-full bg-s-blue opacity-25">
-        <div class="flex sm:flex-row flex-col items-center space-x-8 pb-3">
+        <div class="flex sm:flex-row flex-col items-center md:space-x-8 space-y-3 pb-3">
           <h4>Child Property</h4>
           <div class="grid sm:grid-cols-2 grid-col-1 gap-4 items-center">
-            <img src="/Grid-TailwindCSS/assets/grid-col-row-s-e-39c770a1.png" alt="grid-template-col-child" class="object-contain w-64 h-64">
-          <img src="/Grid-TailwindCSS/assets/grid-col-row-f2e29c76.png" alt="grid-col-row-child" class="object-contain w-64 h-64">
+            <img src="/Grid-TailwindCSS/assets/grid-col-row-s-e-39c770a1.png" alt="grid-template-col-child"
+              class="object-contain w-64 h-64">
+            <img src="/Grid-TailwindCSS/assets/grid-col-row-f2e29c76.png" alt="grid-col-row-child" class="object-contain w-64 h-64">
             <img src="/Grid-TailwindCSS/assets/grid-area-child-f46d482e.png" alt="grid-area-child" class="object-contain w-64 h-64">
             <img src="/Grid-TailwindCSS/assets/sub-grid-child-e22821d7.png" alt="sub-grid-child" class="object-contain w-64 h-64">
           </div>
         </div>
         <hr class="w-full bg-s-blue opacity-25">
-        <div class="flex sm:flex-row flex-col items-center space-x-8 pb-3">
+        <div class="flex sm:flex-row flex-col items-center md:space-x-8 space-y-3 pb-3">
           <h4>Positioning Grid</h4>
           <div class="flex flex-col gap-4">
             <div>
@@ -235,24 +289,26 @@
             <div>
               <img src="/Grid-TailwindCSS/assets/positioning-child-e86fefee.png" alt="justify-content" class="object-contain w-64 h-64">
             </div>
-          <div>
-            <img src="/Grid-TailwindCSS/assets/positioning-child-2-1fd2ccf7.png" alt="place-content" class="object-contain w-64 h-64">
-          </div>
+            <div>
+              <img src="/Grid-TailwindCSS/assets/positioning-child-2-1fd2ccf7.png" alt="place-content" class="object-contain w-64 h-64">
+            </div>
           </div>
           <div class="flex flex-col gap-4">
             <div>
               <h5 class="text-lg font-medium text-white text-center pl-2">Parent</h5>
             </div>
             <div>
-              <img src="/Grid-TailwindCSS/assets/positoining-parent-71c4ffd3.png" alt="justify-content" class="object-contain w-64 h-64 overflow-hidden">
+              <img src="/Grid-TailwindCSS/assets/positoining-parent-71c4ffd3.png" alt="justify-content"
+                class="object-contain w-64 h-64 overflow-hidden">
             </div>
             <div>
-              <img src="/Grid-TailwindCSS/assets/positioning-parent-1-03b74c4d.png" alt="place-content" class="object-contain w-64 h-64 overflow-hidden">
+              <img src="/Grid-TailwindCSS/assets/positioning-parent-1-03b74c4d.png" alt="place-content"
+                class="object-contain w-64 h-64 overflow-hidden">
             </div>
           </div>
         </div>
         <hr class="w-full bg-s-blue opacity-25">
-        <div class="flex sm:flex-row flex-col items-center space-x-8 pb-3">
+        <div class="flex sm:flex-row flex-col items-center md:space-x-8 space-y-3 pb-3">
           <h4>Align grid</h4>
           <div class="flex flex-col gap-3">
             <div>
@@ -266,11 +322,12 @@
             <div>
               <h5 class="text-lg font-medium text-white text-center">Parent</h5>
             </div>
-           <div>
-            <img src="/Grid-TailwindCSS/assets/align-parent-1829d5be.png" alt="justify-content" class="object-contain w-64 h-64 rounded">
-           </div>
             <div>
-              <img src="/Grid-TailwindCSS/assets/align-parent-2-3321503e.png" alt="justify-content" class="object-contain w-64 h-64 rounded">        
+              <img src="/Grid-TailwindCSS/assets/align-parent-1829d5be.png" alt="justify-content" class="object-contain w-64 h-64 rounded">
+            </div>
+            <div>
+              <img src="/Grid-TailwindCSS/assets/align-parent-2-3321503e.png" alt="justify-content"
+                class="object-contain w-64 h-64 rounded">
             </div>
           </div>
         </div>
@@ -280,84 +337,100 @@
   <!---Terminology----->
   <section id="terminology">
     <div class="bg-s-blue">
-      <div class="text-4xl font-bold font-pixelify-sans text-center pt-4 text-l-blue">
+      <div class="md:text-4xl text-2xl font-bold font-pixelify-sans text-center pt-4 text-l-blue">
         <h4>Key features of Grid</h4>
       </div>
-      <div class="grid md:grid-cols-3 grid-cols-2 gap-y-3 m-6 pb-8 text-white">
+      <div class="grid md:grid-cols-3 grid-cols-1 gap-y-3 m-6 pb-8 text-white">
         <div class="flex items-center justify-center space-x-2">
-          <a href="#grid-container" class="border-2 border-ll-blue p-2 hover:text-l-blue rounded text-center font-bold">Grid-container
-          <div>
-            <img src="/Grid-TailwindCSS/assets/Grid-container-de348276.png" alt="grid-container" class="w-52 h-52 rounded outline-cyan-500 object-contain" id="grid-container">
-          </div>
-        </a>
-        </div>
-        <div class="flex items-center justify-center space-x-2">
-          <a href="#grid-container" class="border-2 p-2 border-ll-blue hover:text-l-blue rounded shadow-xl text-center font-bold">Grid-area
-          <div>
-            <img src="/Grid-TailwindCSS/assets/grid-area-3912f5de.png" alt="grid-container" class="w-52 h-52 rounded outline-cyan-500 object-contain" id="grid-container">
-          </div>
-        </a>
+          <a href="#grid-container"
+            class="border-2 border-ll-blue p-2 hover:text-l-blue rounded text-center font-fira-code font-bold">grid-container
+            <div>
+              <img src="/Grid-TailwindCSS/assets/Grid-container-de348276.png" alt="grid-container"
+                class="w-52 h-52 rounded outline-cyan-500 object-contain" id="grid-container">
+            </div>
+          </a>
         </div>
         <div class="flex items-center justify-center space-x-2">
-          <a href="#grid-container" class="border-2 p-2 border-ll-blue hover:text-l-blue rounded shadow-xl text-center font-bold">Grid-items
-          <div>
-            <img src="/Grid-TailwindCSS/assets/grid-items-2465ed00.png" alt="grid-container" class="w-52 h-52 rounded outline-cyan-500 object-contain" id="grid-container">
-          </div>
-        </a>
-        </div>
-        </div>
-        <div class="grid md:grid-cols-3 grid-cols-2 gap-y-3 m-6 pb-8 text-white">
-        <div class="flex items-center justify-center space-x-2">
-          <a href="#grid-container" class="border-2 p-2 border-ll-blue hover:text-l-blue rounded shadow-xl text-center font-bold">Grid-track
-          <div>
-            <img src="/Grid-TailwindCSS/assets/grid-track-5c20fa1b.png" alt="grid-container" class="w-52 h-52 rounded outline-cyan-500 object-contain" id="grid-container">
-          </div>
-        </a>
+          <a href="#grid-container"
+            class="border-2 p-2 border-ll-blue hover:text-l-blue rounded shadow-xl text-center font-fira-code font-bold">grid-area
+            <div>
+              <img src="/Grid-TailwindCSS/assets/grid-area-3912f5de.png" alt="grid-container"
+                class="w-52 h-52 rounded outline-cyan-500 object-contain" id="grid-container">
+            </div>
+          </a>
         </div>
         <div class="flex items-center justify-center space-x-2">
-          <a href="#grid-container" class="border-2 p-2 border-ll-blue hover:text-l-blue rounded shadow-xl text-center font-bold">Grid-Line
-          <div>
-            <img src="/Grid-TailwindCSS/assets/grid-line-c707c503.png" alt="grid-container" class="w-52 h-52 rounded outline-cyan-500 object-contain" id="grid-container">
-          </div>
-        </a>
-        </div>
-        <div class="flex items-center justify-center space-x-2">
-          <a href="#grid-container" class="border-2 p-2 border-ll-blue hover:text-l-blue rounded shadow-xl text-center font-bold">Grid-cell
-          <div>
-            <img src="/Grid-TailwindCSS/assets/grid-cell-bddd57ef.png" alt="grid-container" class="w-52 h-52 rounded outline-cyan-500 object-contain" id="grid-container">
-          </div>
-        </a>
-        </div>
+          <a href="#grid-container"
+            class="border-2 p-2 border-ll-blue hover:text-l-blue rounded shadow-xl text-center font-fira-code font-bold">grid-items
+            <div>
+              <img src="/Grid-TailwindCSS/assets/grid-items-2465ed00.png" alt="grid-container"
+                class="w-52 h-52 rounded outline-cyan-500 object-contain" id="grid-container">
+            </div>
+          </a>
         </div>
       </div>
+      <div class="grid md:grid-cols-3 grid-cols-1 gap-y-3 m-6 pb-8 text-white">
+        <div class="flex items-center justify-center space-x-2">
+          <a href="#grid-container"
+            class="border-2 p-2 border-ll-blue hover:text-l-blue rounded shadow-xl text-center font-fira-code font-bold">grid-track
+            <div>
+              <img src="/Grid-TailwindCSS/assets/grid-track-5c20fa1b.png" alt="grid-container"
+                class="w-52 h-52 rounded outline-cyan-500 object-contain" id="grid-container">
+            </div>
+          </a>
+        </div>
+        <div class="flex items-center justify-center space-x-2">
+          <a href="#grid-container"
+            class="border-2 p-2 border-ll-blue hover:text-l-blue rounded shadow-xl text-center font-fira-code font-bold">grid-Line
+            <div>
+              <img src="/Grid-TailwindCSS/assets/grid-line-c707c503.png" alt="grid-container"
+                class="w-52 h-52 rounded outline-cyan-500 object-contain" id="grid-container">
+            </div>
+          </a>
+        </div>
+        <div class="flex items-center justify-center space-x-2">
+          <a href="#grid-container"
+            class="border-2 p-2 border-ll-blue hover:text-l-blue rounded shadow-xl text-center font-fira-code font-bold">grid-cell
+            <div>
+              <img src="/Grid-TailwindCSS/assets/grid-cell-bddd57ef.png" alt="grid-container"
+                class="w-52 h-52 rounded outline-cyan-500 object-contain" id="grid-container">
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
 
     </div>
   </section>
   <!---Animation---->
   <section class="bg-l-blue" id="animation">
-    <div class="p-4 text-center font-pixelify-sans text-4xl font-bold text-black">
-      <h4>Animate me</h4>
+    <div class="flex items-center p-4 justify-center space-x-2 font-pixelify-sans text-4xl font-bold text-black">
+      <h4>Grid Animation Available</h4>
+     <a href="#animation" class="scroll-smooth"> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="fill-s-blue hover:cursor-pointer hover:fill-ll-blue scroll-smooth">
+      <path
+        d="m11 12.2l-.9-.9q-.275-.275-.7-.275t-.7.275q-.275.275-.275.7t.275.7l2.6 2.6q.3.3.7.3t.7-.3l2.6-2.6q.275-.275.275-.7t-.275-.7q-.275-.275-.7-.275t-.7.275l-.9.9V9q0-.425-.288-.713T12 8q-.425 0-.713.288T11 9v3.2Zm1 9.8q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Z" />
+    </svg></a>
     </div>
-    <div class="grid-flow-col grid-cols-5 grid gap-4 p-4 m-8">
+    <div class="grid md:grid-cols-5 grid-cols-2 gap-4 p-4 m-8 overflow-hidden font-fira-code" id="animation">
       <div
         class="border-2 rounded text-center font-semibold p-2 hover:cursor-pointer hover:bg-s-blue hover:text-white shadow-xl">
-        <p>Grid-Gap</p>
+        <p>grid-gap</p>
       </div>
       <div
         class="border-2 rounded text-center font-semibold p-2 hover:cursor-pointer hover:bg-s-blue hover:text-white shadow-xl">
-        <p>Grid-row-gap</p>
+        <p>grid-row-gap</p>
       </div>
       <div
         class="border-2 rounded text-center font-semibold p-2 hover:cursor-pointer hover:bg-s-blue hover:text-white shadow-xl">
-        <p>Grid-col-Gap</p>
+        <p>grid-col-gap</p>
       </div>
       <div
         class="border-2 rounded text-center font-semibold p-2 hover:cursor-pointer hover:bg-s-blue hover:text-white shadow-xl">
-        <p>Grid-template-col</p>
+        <p>grid-template-col</p>
       </div>
       <div
         class="border-2 rounded text-center font-semibold p-2 hover:cursor-pointer hover:bg-s-blue hover:text-white shadow-xl">
-        <p>Grid-template-row</p>
+        <p>grid-template-row</p>
       </div>
     </div>
   </section>
@@ -365,23 +438,78 @@
   <!---Heading---->
 
   <div class="text-center text-3xl font-pixelify-sans font-semibold p-2 text-white" id="reference">
-    <h4>Know more about CSS</h4>
+    <h4>Know more about <span class="text-l-blue">CSS</span></h4>
   </div>
 
   <!---content---->
   <div class="mx-10 my-8 text-l-blue">
-    <div class="m-4 text-lg font-medium">
+    <div class="text-xl font-medium pb-4">
       <h4>Follow : <a href="https://www.youtube.com/@CyberDudeNetworks" target="_blank"
           class="text-white hover:text-l-blue hover:cursor-pointer"> CyberDude Networks</a></h4>
     </div>
     <div>
-      <h4 class="text-xl font-medium pb-2">Videos</h4>
+      <h4 class="text-xl font-medium pb-4">Similar Videos</h4>
     </div>
-    <div class="flex items-center justify-center space-x-2 shadow box-shadow: 2px 2px shadow-l-blue p-2 pt-8 pb-8">
-      <div class="flex items-center space-x-2">
-      <img src="/Grid-TailwindCSS/assets/Bem CSS-146c91e2.png" alt="BEM CSS" class="w-56 h-56 object-contain rounded overflow-hidden">
-      <img src="/Grid-TailwindCSS/assets/CSS Flexbox-b4682c58.png" alt="CSS Flexbox" class="w-56 h-56 object-contain rounded overflow-hidden">
-      <img src="/Grid-TailwindCSS/assets/CSS-bc9513ea.png" alt="CSS" class="w-56 h-56 object-contain rounded overflow-hidden">
+    <div
+      class="grid md:grid-cols-4 grid-col-1 md:space-x-2 space-y-4 border-2 border-l-blue shadow box-shadow:4px 4px shadow-l-blue p-3">
+      <div class="flex flex-col items-center justify-center">
+        <img src="/Grid-TailwindCSS/assets/Bem CSS-f5721fd7.png" alt="BEM CSS"
+          class="sm:w-56 sm:h-56 object-contain rounded overflow-hidden">
+        <a href="https://www.youtube.com/playlist?list=PL73Obo20O_7iROYs29LSXk_mCwVN0hscN" target="_blank"
+          class="hover:cursor-pointer hover:text-ll-blue">Advanced CSS</a>
+      </div>
+      <div class="flex flex-col items-center justify-center">
+        <img src="/Grid-TailwindCSS/assets/CSS Flexbox-e78e1776.png" alt="CSS Flexbox"
+          class="sm:w-56 sm:h-56 object-contain rounded overflow-hidden">
+        <a href="https://www.youtube.com/playlist?list=PL73Obo20O_7hQzePIlNfRYSqT3g03tUT9" target="_blank"
+          class="hover:cursor-pointer hover:text-ll-blue">CSS Flexbox</a>
+      </div>
+      <div class="flex flex-col items-center justify-center">
+        <img src="/Grid-TailwindCSS/assets/CSS-95933c09.png" alt="CSS" class="sm:w-56 sm:h-56 object-contain rounded overflow-hidden">
+        <a href="https://www.youtube.com/playlist?list=PL73Obo20O_7gGv4cLEOoqTF8_m8rPKyQh" target="_blank"
+          class="hover:cursor-pointer hover:text-ll-blue">CSS</a>
+      </div>
+      <div class="flex flex-col items-center justify-center">
+        <img src="/Grid-TailwindCSS/assets/SASS CSS-3fd7daf9.png" alt="SASS"
+          class="sm:w-56 sm:h-56 object-contain rounded overflow-hidden">
+        <a href="https://www.youtube.com/playlist?list=PL73Obo20O_7hdxU99FNNE-rowIltEwsNe" target="blank"
+          class="hover:cursor-pointer hover:text-ll-blue">SASS</a>
+      </div>
+    </div>
+    <div>
+      <h4 class="text-xl font-medium pb-4 pt-4">CSS Grid from other sources</h4>
+    </div>
+    <div
+      class="grid md:grid-cols-5 grid-col-1 md:space-x-2 space-y-4 border-2 border-l-blue shadow box-shadow:4px 4px shadow-l-blue p-3">
+      <div class="flex flex-col items-center justify-center">
+        <img src="/Grid-TailwindCSS/assets/CSS grid-1-48e354c9.png" alt="CSS Grid"
+          class="sm:w-56 sm:h-56 object-contain rounded overflow-hidden">
+        <a href="https://www.youtube.com/watch?v=BNmxUzPRYdw&t=80s" target="blank"
+          class="hover:cursor-pointer hover:text-ll-blue">CodewithHarry</a>
+      </div>
+      <div class="flex flex-col items-center justify-center">
+        <img src="/Grid-TailwindCSS/assets/CSS grid-2-2ea58bee.png" alt="CSS grid"
+          class="sm:w-56 sm:h-56 object-contain rounded overflow-hidden">
+        <a href="https://www.youtube.com/watch?v=EiNiSFIPIQE" target="blank"
+          class="hover:cursor-pointer hover:text-ll-blue">Slaying The Dragon</a>
+      </div>
+      <div class="flex flex-col items-center justify-center">
+        <img src="/Grid-TailwindCSS/assets/CSS grid-3-12baba71.png" alt="CSS grid"
+          class="sm:w-56 sm:h-56 object-contain rounded overflow-hidden">
+        <a href="https://www.youtube.com/watch?v=VN9hkmTvq3Y&t=17s" target="blank"
+          class="hover:cursor-pointer hover:text-ll-blue">Logic First Tamil</a>
+      </div>
+      <div class="flex flex-col items-center justify-center">
+        <img src="/Grid-TailwindCSS/assets/CSS grid-4-663cc7b9.png" alt="CSS grid"
+          class="sm:w-56 sm:h-56 object-contain rounded overflow-hidden">
+        <a href="https://www.youtube.com/watch?v=Ak0emMY6U10&t=7s" target="blank"
+          class="hover:cursor-pointer hover:text-ll-blue">Beta Nanban</a>
+      </div>
+      <div class="flex flex-col items-center justify-center">
+        <img src="/Grid-TailwindCSS/assets/CSS grid-5-e3c770d6.png" alt="CSS grid"
+          class="sm:w-56 sm:h-56 object-contain rounded overflow-hidden">
+        <a href="https://www.youtube.com/watch?v=x7tLPhnA06w&list=PL4cUxeGkcC9itC4TxYMzFCfveyutyPOCY" target="blank"
+          class="hover:cursor-pointer hover:text-ll-blue">Net Ninja</a>
       </div>
     </div>
   </div>
@@ -390,11 +518,12 @@
   <section>
     <div>
       <div class="font-medium text-sm m-6 text-center text-white">
-        <p>Copr. 2023 H.Jeya Rosini</p>
-        <a href="#top" class="text-l-blue p-1">Go Home</a>
+        <span>Copyright, 2023 H.Jeya Rosini <a href="#top" class="text-l-blue p-1">Go Home</a></span>
+
       </div>
-      <div class="m-2 p-2 text-white">
-        <p><span class="font-semibold text-sm">Note: </span>This project is done as a Junior Intern offered as 6-Month
+      <div class="m-4 p-2 text-white bg-s-blue">
+        <p><span class="font-semibold text-lg text-l-blue">Note : </span>This project is done as a Junior Intern offered
+          as 6-Month
           Internship Program by <a href="https://www.cyberdudenetworks.com/" target="_blank"
             class="text-l-blue hover:text-white">CyberDude Networks Pvt.Ltd</a> under the guidance of <span
             class="text-l-blue">Mr. Anbuselvan</span></p>
